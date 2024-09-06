@@ -668,6 +668,10 @@ h2 {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+
+    header {
+        padding: 20px 5%;
+    }
     .logo {
         font-size: 2rem;
     }
@@ -679,6 +683,21 @@ h2 {
     #menu-icon {
         display: block;
     }
+
+    .navlist.show {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+
+    
 
     .hero {
         flex-direction: column;
@@ -756,9 +775,65 @@ h2 {
         text-align: left;
         padding: 20px;
     }
+
+    #contact {
+        padding: 40px; /* Reduced padding for smaller screens */
+    }
+
+    .contact-container {
+        flex-direction: column; /* Stack form and info vertically */
+        align-items: center; /* Center items */
+    }
+
+    .contact-form,
+    .contact-info {
+        padding: 30px; /* Reduced padding for both sections */
+        margin: 10px 0; /* Reduced margin */
+        width: 100%; /* Make full-width */
+    }
+
+    .contact-form {
+        margin-right: 0; /* Remove side margins */
+    }
+
+    .contact-info {
+        margin-left: 0; /* Remove side margins */
+        margin-top: 30px; /* Adjust spacing */
+    }
+
+    .contact-form button {
+        width: 100%; /* Make button full width */
+        margin-left: 0; /* Center button */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px; /* Keep padding consistent */
+        border-radius: 10px; /* Slightly smaller radius */
+    }
 }
 
 @media (max-width: 480px) {
+
+    header {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px 5%;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .top-btnn .h-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .navlist.show {
+        right: 5px;
+        padding: 10px;
+    }
     .hero {
         height: auto;
         padding: 20px;
